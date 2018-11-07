@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel="stylesheet">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <title>billo.ch | Home</title>
+    </head>
+    <body>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+                    <script>
+                    $(document).ready(function(){
+
+                      $("a").on('click', function(event) {
+
+
+                        if (this.hash !== "") {
+
+                          event.preventDefault();
+
+
+                          var hash = this.hash;
+
+
+                          $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                          }, 800, function(){
+
+
+                            window.location.hash = hash;
+                          });
+                        } 
+                      });
+                    });
+                    </script>
+            <div id="main_logo"></div>
+                <h2 id="title">billo.ch</h2>
+        <div id="header">
+            <a href="#middle"><button id="btn01">Los gehts!</button></a>
+        </div>
+        <div id="middle">
+            <h2 id="middle_title">Wonach suchen Sie?</h2>
+        </div>
+        <div id="boxen">
+            <a href=""><div id="B_Computer"></div></a>
+            <a href=""><div id="B_Handy"></div></a>
+            <a href=""><div id="B_Zubehoer"></div></a> 
+        </div>
+    </body>
+</html>
