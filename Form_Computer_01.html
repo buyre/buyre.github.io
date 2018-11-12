@@ -10,6 +10,10 @@
         <title>buyre.ch | Computer</title>
     </head>
     <body>
+
+
+
+
         <h2>Wählen Sie Ihre gewünschten Marken aus</h2>
         <div id="block_main">
             
@@ -30,6 +34,7 @@
   <input type="checkbox" checked>
   <span class="slider round"></span>
 </label></li>
+<li id="ul1_4"></li>
             </ul>
             
             
@@ -49,6 +54,7 @@
   <input type="checkbox" checked>
   <span class="slider round"></span>
 </label></li>
+<li id="ul2_4"></li>
             </ul>
             
             
@@ -68,7 +74,15 @@
   <input type="checkbox" checked>
   <span class="slider round"></span>
 </label></li>
+
+<li id="ul3_4"></li>
             </ul>
+
+
+            
+
+
+            
             
 <!--      
     <form>
@@ -111,9 +125,13 @@
             ::-webkit-scrollbar-thumb {
                 background: #FF0000;
             }
+
+            #placeholder{
+                height: 50px;
+            }
             #block_main {
                 width: 70%;
-                height: 50em;
+                
                 background-color: #88D498;
                 margin-right: 15%;
                 margin-left: 15%;
@@ -124,9 +142,11 @@
                 box-shadow: 0px 30px 0px 0px rgba(26,174,111,0.75);
                 margin-top: 4%;
                 margin-bottom: 6%;
+                position: absolute;
+                top: 20%;
             }
             
-            #ul1, #ul2, #ul3 {
+            #ul1, #ul2, #ul3, #ul4 {
                 list-style: none;
             }
             
@@ -191,7 +211,7 @@
                 background-color: transparent;
             }
             
-            #ul1_1,#ul1_2,#ul1_3,#ul2_1,#ul2_2,#ul2_3,#ul3_1,#ul3_2,#ul3_3 {
+            #ul1_1,#ul1_2,#ul1_3, #ul1_4,#ul2_1,#ul2_2,#ul2_3, #ul2_4, #ul3_1,#ul3_2,#ul3_3, #ul3_4 {
                 background-color: transparent;
                 margin-top: 80px;
             }
@@ -223,6 +243,13 @@
                 margin-top: 5%;
                 text-align: center;
             }
+
+            #centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;}
             
         </style>
 
