@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel="stylesheet">
+        <link href="style_form_computer.css" rel="stylesheet" type="text/css">
+        <title>buyre.ch | Computer</title>
+    </head>
+    <body>
+        <h2>Wählen Sie Ihre gewünschten Marken aus</h2>
+        <div id="block_main">
+            
+            
+         <!--UL 1-->   <ul id="ul1">
+                
+                <li id="ul1_1"><p>UL1_1</p><label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label></li>
+                
+                <li id="ul1_2"><p>UL1_2</p><label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label></li>
+            
+                <li id="ul1_3"><p>UL1_3</p><label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label></li>
+            </ul>
+            
+            
+        <!--UL 2-->  <ul id="ul2">
+            
+                <li id="ul2_1"><p>UL2_1</p><label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label></li>
+            
+                <li id="ul2_2"><p>UL2_2</p><label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label></li>
+            
+                <li id="ul2_3"><p>UL2_3</p><label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label></li>
+            </ul>
+            
+            
+        <!--UL 3-->  <ul id="ul3">
+            
+                <li id="ul3_1"><p>UL3_1</p><label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label></li>
+            
+                <li id="ul3_2"><p>UL3_2</p><label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label></li>
+            
+                <li id="ul3_3"><p>UL3_3</p><label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label></li>
+            </ul>
+            
+<!--      
+    <form>
+        <label for="fmarken">Sonstige Marken</label>
+        <input type="text" id="fmarken" name="fmarken">
+            </form>
+-->
+        </div>
+        <style type="text/css">
+            * {
+                background-color: #114B5F;
+                font-family: Montserrat;
+            }
+            /*
+            input[type=text] {
+                position: relative;
+                width: 80%;
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-top: 5%;
+                padding: 12px 20px;
+                box-sizing: border-box;
+                border: 2px solid rgb(26,174,111);
+                border-radius: 4px;
+                background-color: transparent;
+                color: white;
+            }
+            
+            #fmarken {
+                color: white;
+                text-align: center;
+            }
+            
+            */
+            ::-webkit-scrollbar {
+                width: 0px;  
+                background: transparent; 
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #FF0000;
+            }
+            #block_main {
+                width: 70%;
+                height: 50em;
+                background-color: #88D498;
+                margin-right: 15%;
+                margin-left: 15%;
+                box-sizing: border-box;
+                border-radius: 90px;
+                -webkit-box-shadow: 0px 30px 0px 0px rgba(26,174,111,0.75);
+                -moz-box-shadow: 0px 30px 0px 0px rgba(26,174,111,0.75);
+                box-shadow: 0px 30px 0px 0px rgba(26,174,111,0.75);
+                margin-top: 4%;
+                margin-bottom: 6%;
+            }
+            
+            #ul1, #ul2, #ul3 {
+                list-style: none;
+            }
+            
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 71px;
+                height: 44px;
+            }
+
+            .switch input { 
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 65%;
+                left: 0px;
+                bottom: 0px;
+                background-color: #114B5F;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            input:checked + .slider {
+              background-color: #1A936F;
+            }
+
+
+            input:checked + .slider:before {
+              -webkit-transform: translateX(26px);
+              -ms-transform: translateX(26px);
+              transform: translateX(26px);
+            }
+
+            .slider.round {
+              border-radius: 40px;
+            }
+
+            .slider.round:before {
+              border-radius: 50%;
+            }
+            
+            #ul1, #ul2, #ul3 {
+                position: relative;
+                background-color: transparent;
+            }
+            
+            #ul1_1,#ul1_2,#ul1_3,#ul2_1,#ul2_2,#ul2_3,#ul3_1,#ul3_2,#ul3_3 {
+                background-color: transparent;
+                margin-top: 80px;
+            }
+            
+            #ul1_1 p,#ul1_2 p,#ul1_3 p,#ul2_1 p,#ul2_2 p,#ul2_3 p,#ul3_1 p,#ul3_2 p,#ul3_3 p{
+                background-color: transparent;
+                color: white;
+                font-weight: 600;
+                font-size: 17pt;
+                letter-spacing: 1.5px;
+                text-align: center;
+            }
+            
+            #ul1_1 label,#ul1_2 label,#ul1_3 label,#ul2_1 label,#ul2_2 label,#ul2_3 label,#ul3_1 label,#ul3_2 label,#ul3_3 label{
+                background-color: transparent;
+            }
+            
+            #ul1,#ul2,#ul3 {
+                float: left;
+                display: block;
+                margin: 10% 10%;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+            
+            h2{
+                color: #F3E9D2;
+                letter-spacing: 3px;
+                margin-top: 5%;
+                text-align: center;
+            }
+            
+        </style>
+    </body>
+</html>
